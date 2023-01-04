@@ -51,17 +51,10 @@ export default function Home() {
         </a>
         <a
           className="link"
-          href="https://discord.com/users/1047757914816913428"
+          href="https://s3.amazonaws.com/handshake.production/documents/documents/035/201/055/original/JasonPage_Resume.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2HSNSGACXF6KKT2H%2F20230104%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230104T054043Z&X-Amz-Expires=10&X-Amz-SignedHeaders=host&X-Amz-Signature=e5d0093841714a69426b2f44ca6b04b9ea8db6ab01f9fbe3ed2001c006016b3f"
           target="_blank"
         >
-          <i className="fab fa-discord">&nbsp;</i> Discord
-        </a>
-        <a
-          className="link"
-          href="https://s3.amazonaws.com/handshake.production/documents/documents/035/201/055/original/JasonPage_Resume.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2HSNSGACXF6KKT2H%2F20230104%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230104T053508Z&X-Amz-Expires=10&X-Amz-SignedHeaders=host&X-Amz-Signature=d97b4fa6b1243c26312dd8a9c9ba2862abb4c0817be3536be7286d09393f4ba8"
-          target="_blank"
-        >
-          <i className="fas fa-file">&nbsp;</i> Resume
+          <i className="fas fa-file" /> Resume
         </a>
       </div>
       <div id="footer"> Contact • jasonepage@gmail.com </div>
