@@ -59,6 +59,7 @@ export default function Home() {
         <a
           className="link"
           href="https://s3.amazonaws.com/handshake.production/documents/documents/035/201/055/original/JasonPage_Resume.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2HSNSGACXF6KKT2H%2F20230104%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230104T053508Z&X-Amz-Expires=10&X-Amz-SignedHeaders=host&X-Amz-Signature=d97b4fa6b1243c26312dd8a9c9ba2862abb4c0817be3536be7286d09393f4ba8"
+          target="_blank"
         >
           <i className="fas fa-file">&nbsp;</i> Resume
         </a>
