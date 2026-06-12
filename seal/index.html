@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seal — Provably Human Chat</title>
+  <meta name="description" content="The group chat where everyone is provably human. Friendships are forged in person with a hardware key or passkey. End-to-end encrypted. No phone numbers. No bots.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Seal — Provably Human Chat">
+  <meta property="og:description" content="The group chat where everyone is provably human. Forged in person. End-to-end encrypted. No bots.">
+  <meta property="og:url" content="https://sealmessenger.com">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230C0E12'/%3E%3Ccircle cx='32' cy='32' r='20' fill='none' stroke='%23D9A441' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='9' fill='%23D9A441'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --ink: #0C0E12;
+      --brass: #D9A441;
+      --silver: #bfbfbf;
+      --text: #e8e6e1;
+      --dim: rgba(232, 230, 225, 0.55);
+    }
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      font-family: -apple-system, system-ui, "Segoe UI", sans-serif;
+      background: var(--ink);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 0 24px 80px; }
+    .hero { padding: 96px 0 64px; text-align: center; }
+    .seal-mark {
+      width: 88px; height: 88px; margin: 0 auto 28px; border-radius: 50%;
+      border: 4px solid var(--brass);
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 0 60px rgba(217, 164, 65, 0.25);
+    }
+    .seal-mark span { width: 36px; height: 36px; border-radius: 50%; background: var(--brass); }
+    h1 { font-size: 2.4rem; font-weight: 800; letter-spacing: -0.02em; }
+    .tagline { font-size: 1.25rem; color: var(--dim); margin-top: 14px; }
+    .tagline strong { color: var(--text); }
+    .cta {
+      display: inline-block; margin-top: 36px; padding: 14px 28px;
+      background: var(--brass); color: var(--ink); font-weight: 700;
+      border-radius: 999px; text-decoration: none; font-size: 1rem;
+    }
+    .cta.soon { opacity: 0.85; cursor: default; }
+    section { padding: 36px 0; border-top: 1px solid rgba(255,255,255,0.08); }
+    h2 { font-size: 1.15rem; color: var(--brass); margin-bottom: 10px; font-weight: 700; }
+    p + p { margin-top: 12px; }
+    .muted { color: var(--dim); }
+    .tiers { display: flex; gap: 16px; margin-top: 18px; flex-wrap: wrap; }
+    .tier {
+      flex: 1; min-width: 240px; padding: 18px 20px; border-radius: 14px;
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+    }
+    .tier h3 { font-size: 1rem; margin-bottom: 6px; }
+    .tier.brass h3 { color: var(--brass); }
+    .tier.silver h3 { color: var(--silver); }
+    .tier p { font-size: 0.92rem; color: var(--dim); }
+    footer { text-align: center; padding: 32px 0 48px; color: var(--dim); font-size: 0.9rem; }
+    footer a { color: var(--dim); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="hero">
+      <div class="seal-mark"><span></span></div>
+      <h1>Seal</h1>
+      <p class="tagline">The group chat where <strong>everyone is provably human</strong> —<br>and you can prove you've actually met.</p>
+      <span class="cta soon">Coming soon to the App Store</span>
+    </div>
+
+    <section>
+      <h2>Friendships are forged, not followed</h2>
+      <p>There are no usernames to search and no contact lists to upload. To become friends in Seal, you meet in person: your friend taps their hardware security key — or uses their passkey — on your phone, cryptographically signing the moment. Bots can mint a million accounts. They can't stand in a room with you.</p>
+    </section>
+
+    <section>
+      <h2>Sealed shut</h2>
+      <p>Every message and photo is end-to-end encrypted before it leaves your device, with keys held in your iPhone's Secure Enclave. We run zero servers and can read nothing — there's no honeypot, because there's no pot.</p>
+      <p class="muted">No phone numbers. No ads. No tracking. No data to sell, ever.</p>
+    </section>
+
+    <section>
+      <h2>Two rings, one rule</h2>
+      <div class="tiers">
+        <div class="tier brass">
+          <h3>● Brass — Verified</h3>
+          <p>Identity rooted in a physical FIDO2 hardware key. The strongest proof of personhood available on a phone.</p>
+        </div>
+        <div class="tier silver">
+          <h3>● Silver — Passkey</h3>
+          <p>Face ID passkey identity. Thirty seconds to join, the same encryption, the same in-person ceremonies.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Your forge log</h2>
+      <p>Every friendship you forge is a signed, timestamped proof that you met a human. Over the years it becomes something no other app can give you: a verifiable diary of your real-world social life.</p>
+    </section>
+
+    <footer>
+      <a href="privacy.html">Privacy Policy</a> · <a href="support.html">Support</a> · <a href="mailto:jasonepage@gmail.com">Contact</a>
+      <br>© 2026 Jason Page
+    </footer>
+  </main>
+</body>
+</html>
