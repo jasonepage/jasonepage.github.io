@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Progressive Gin — Honest Progressive Rummy</title>
+  <meta name="description" content="Seven rising rounds of Progressive Rummy against a warm cast of opponents. Buy the pile, go down, go out. Fully offline — no ads, no in-app purchases, no tracking.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Progressive Gin">
+  <meta property="og:description" content="Seven rising rounds of Progressive Rummy. Fully offline. No ads, no in-app purchases, no nonsense.">
+  <meta property="og:url" content="https://jasonepage.github.io/progressivegin/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23123a23'/%3E%3Crect x='20' y='14' width='24' height='34' rx='4' fill='%23FBF8F1' stroke='%23D4B06B' stroke-width='2'/%3E%3Cpath d='M32 24c-3-5-9-2-9 3 0 4 5 7 9 11 4-4 9-7 9-11 0-5-6-8-9-3z' fill='%23BA3D38'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --felt: #123a23;
+      --felt-deep: #07260f;
+      --gold: #D4B06B;
+      --gold-deep: #9e7a3d;
+      --cream: #FBF8F1;
+      --text: #ece9e0;
+      --dim: rgba(236, 233, 224, 0.6);
+      --red: #BA3D38;
+    }
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      font-family: -apple-system, system-ui, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 50% 32%, var(--felt) 0%, var(--felt-deep) 75%);
+      background-attachment: fixed;
+      color: var(--text);
+      line-height: 1.6;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 0 24px 80px; }
+    .hero { padding: 88px 0 56px; text-align: center; }
+    .cards { position: relative; height: 132px; margin: 0 auto 26px; width: 220px; }
+    .card {
+      position: absolute; left: 50%; top: 0; width: 86px; height: 122px;
+      margin-left: -43px; border-radius: 9px; background: var(--cream);
+      border: 1px solid #d8cfb8; box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+      display: flex; align-items: center; justify-content: center;
+      font-family: Georgia, "Times New Roman", serif; font-weight: 700; font-size: 1.5rem;
+    }
+    .card .pip { font-size: 1.7rem; line-height: 1; }
+    .card.k { transform: rotate(-15deg) translateX(-46px) translateY(8px); color: #292933; }
+    .card.a { transform: rotate(-2deg); color: var(--red); z-index: 2; }
+    .card.s { transform: rotate(13deg) translateX(46px) translateY(6px); color: var(--red); }
+    h1 { font-family: Georgia, serif; font-size: 2.6rem; font-weight: 700; letter-spacing: -0.01em; }
+    .tagline { font-size: 1.2rem; color: var(--dim); margin-top: 14px; }
+    .tagline strong { color: var(--text); }
+    .badges { margin-top: 18px; font-size: 0.95rem; color: var(--gold); letter-spacing: 0.02em; }
+    .cta {
+      display: inline-block; margin-top: 34px; padding: 14px 30px;
+      background: linear-gradient(180deg, var(--gold), var(--gold-deep));
+      color: var(--felt-deep); font-weight: 700;
+      border-radius: 999px; text-decoration: none; font-size: 1rem;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+    }
+    .cta.soon { cursor: default; }
+    section { padding: 34px 0; border-top: 1px solid rgba(212,176,107,0.18); }
+    h2 { font-size: 1.15rem; color: var(--gold); margin-bottom: 12px; font-weight: 700; }
+    p + p { margin-top: 12px; }
+    .grid { display: flex; gap: 16px; margin-top: 8px; flex-wrap: wrap; }
+    .feature {
+      flex: 1; min-width: 220px; padding: 18px 20px; border-radius: 14px;
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(212,176,107,0.18);
+    }
+    .feature h3 { font-size: 1rem; margin-bottom: 6px; color: var(--gold); }
+    .feature p { font-size: 0.92rem; color: var(--dim); }
+    ul { margin: 8px 0 0 18px; color: var(--dim); }
+    ul li { margin: 6px 0; }
+    footer { text-align: center; padding: 36px 0 0; color: var(--dim); font-size: 0.9rem; }
+    footer a { color: var(--gold); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="hero">
+      <div class="cards" aria-hidden="true">
+        <div class="card k">K<span class="pip">&#9824;</span></div>
+        <div class="card s">7<span class="pip">&#9830;</span></div>
+        <div class="card a">A<span class="pip">&#9829;</span></div>
+      </div>
+      <h1>Progressive Gin</h1>
+      <p class="tagline">Seven rising rounds of <strong>Progressive Rummy</strong> —<br>buy the pile, go down, go out.</p>
+      <p class="badges">Offline · No ads · No in-app purchases · No tracking</p>
+      <span class="cta soon">Coming soon to the App Store</span>
+    </div>
+
+    <section>
+      <h2>The game your family already plays</h2>
+      <p>Progressive Rummy is the rising-contract card game that's lived around kitchen tables for generations. Each of the seven rounds asks for more — two groups of three, then a group and a run, all the way to three runs of four. Draw, build your melds, lay them down, and race to shed every card. Lowest score after seven rounds wins.</p>
+    </section>
+
+    <section>
+      <h2>Buy the pile</h2>
+      <p>When another player is about to draw, jump in and <strong>buy</strong> the top discard — it comes with two hidden cards off the deck. A gamble that can complete your hand or load it with deadwood. Two buys per round.</p>
+    </section>
+
+    <section>
+      <h2>A table with character</h2>
+      <p>Play against Rose, Frank, June and the rest of the card-room regulars — opponents who play a smart, honest game. No "rigged" computer, no pay-to-win, no timers nudging you to spend.</p>
+    </section>
+
+    <section>
+      <h2>Made with care</h2>
+      <div class="grid">
+        <div class="feature">
+          <h3>Crafted cards</h3>
+          <p>Hand-drawn, easy to read at a glance, with suits that never rely on colour alone.</p>
+        </div>
+        <div class="feature">
+          <h3>Accessible</h3>
+          <p>VoiceOver on every card and control, Dynamic Type, high contrast, full Reduce Motion support.</p>
+        </div>
+      </div>
+      <ul>
+        <li>Smooth, tasteful animation</li>
+        <li>Plays great on iPhone and iPad</li>
+        <li>Pay-once-free: nothing trying to grab your attention or your data</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Progressive Gin · <a href="support.html">Support</a> · <a href="../">More apps</a></p>
+      <p style="margin-top:8px">&copy; 2026 Jason Page</p>
+    </footer>
+  </main>
+</body>
+</html>
