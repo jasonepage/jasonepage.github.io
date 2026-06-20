@@ -1,14 +1,21 @@
 {
   "links": [
-    "https://www.allrecipes.com/recipe/16354/easy-meatloaf/",
-    "https://www.budgetbytes.com/garlic-butter-baked-chicken/",
-    "https://www.simplyrecipes.com/recipes/banana_bread/"
+    "https://jasonepage.github.io/mise/recipes/overnight-oats.html",
+    "https://jasonepage.github.io/mise/recipes/sheet-pan-chicken.html",
+    "https://jasonepage.github.io/mise/recipes/garlic-butter-pasta.html",
+    "https://jasonepage.github.io/mise/recipes/blueberry-banana-smoothie.html",
+    "https://jasonepage.github.io/mise/recipes/tomato-soup.html",
+    "https://jasonepage.github.io/mise/recipes/honey-garlic-salmon.html",
+    "https://jasonepage.github.io/mise/recipes/chocolate-chip-cookies.html",
+    "https://jasonepage.github.io/mise/recipes/chickpea-salad.html",
+    "https://jasonepage.github.io/mise/recipes/buttermilk-pancakes.html",
+    "https://jasonepage.github.io/mise/recipes/black-bean-tacos.html"
   ],
   "recipes": [
     {
       "id": "sample-garlic-pasta",
       "title": "Garlic Butter Weeknight Pasta",
-      "summary": "A 20-minute pantry dinner — buttery, garlicky, and just spicy enough.",
+      "summary": "A 20-minute pantry dinner \u2014 buttery, garlicky, and just spicy enough.",
       "heroImageURL": "https://jasonepage.github.io/mise/images/garlic-pasta.jpg",
       "totalMinutes": 20,
       "baseServings": 4,
@@ -18,28 +25,89 @@
       "isFavorite": false,
       "extractionMethod": "manual",
       "extractionConfidence": 1,
-      "source": { "siteName": "Mise Kitchen" },
-      "tags": ["Weeknight", "Sample"],
+      "source": {
+        "siteName": "Mise Kitchen"
+      },
+      "tags": [
+        "Weeknight",
+        "Sample"
+      ],
       "ingredients": [
-        { "sortIndex": 0, "quantity": 12, "unit": "oz", "item": "spaghetti", "rawText": "12 oz spaghetti" },
-        { "sortIndex": 1, "quantity": 4, "unit": "tbsp", "item": "butter", "rawText": "4 tbsp butter" },
-        { "sortIndex": 2, "quantity": 4, "unit": "clove", "item": "garlic", "note": "minced", "rawText": "4 cloves garlic, minced" },
-        { "sortIndex": 3, "quantity": 0.5, "unit": "tsp", "item": "red pepper flakes", "rawText": "1/2 teaspoon red pepper flakes" },
-        { "sortIndex": 4, "quantity": 0.5, "unit": "cup", "item": "grated parmesan", "rawText": "1/2 cup grated parmesan" },
-        { "sortIndex": 5, "quantity": 0.25, "unit": "cup", "item": "chopped parsley", "rawText": "1/4 cup chopped parsley" },
-        { "sortIndex": 6, "item": "Salt and pepper", "note": "to taste", "rawText": "Salt and pepper to taste" }
+        {
+          "sortIndex": 0,
+          "quantity": 12,
+          "unit": "oz",
+          "item": "spaghetti",
+          "rawText": "12 oz spaghetti"
+        },
+        {
+          "sortIndex": 1,
+          "quantity": 4,
+          "unit": "tbsp",
+          "item": "butter",
+          "rawText": "4 tbsp butter"
+        },
+        {
+          "sortIndex": 2,
+          "quantity": 4,
+          "unit": "clove",
+          "item": "garlic",
+          "note": "minced",
+          "rawText": "4 cloves garlic, minced"
+        },
+        {
+          "sortIndex": 3,
+          "quantity": 0.5,
+          "unit": "tsp",
+          "item": "red pepper flakes",
+          "rawText": "1/2 teaspoon red pepper flakes"
+        },
+        {
+          "sortIndex": 4,
+          "quantity": 0.5,
+          "unit": "cup",
+          "item": "grated parmesan",
+          "rawText": "1/2 cup grated parmesan"
+        },
+        {
+          "sortIndex": 5,
+          "quantity": 0.25,
+          "unit": "cup",
+          "item": "chopped parsley",
+          "rawText": "1/4 cup chopped parsley"
+        },
+        {
+          "sortIndex": 6,
+          "item": "Salt and pepper",
+          "note": "to taste",
+          "rawText": "Salt and pepper to taste"
+        }
       ],
       "steps": [
-        { "sortIndex": 0, "text": "Boil the spaghetti in well-salted water until al dente, about 9 minutes, then drain and reserve a splash of the pasta water.", "timerSeconds": 540 },
-        { "sortIndex": 1, "text": "Melt the butter in a large pan over medium heat, add the garlic and red pepper flakes, and cook until fragrant, about 1 minute.", "timerSeconds": 60 },
-        { "sortIndex": 2, "text": "Toss the pasta in the garlic butter with a little reserved pasta water until glossy." },
-        { "sortIndex": 3, "text": "Off the heat, stir in the parmesan and parsley, season with salt and pepper, and serve." }
+        {
+          "sortIndex": 0,
+          "text": "Boil the spaghetti in well-salted water until al dente, about 9 minutes, then drain and reserve a splash of the pasta water.",
+          "timerSeconds": 540
+        },
+        {
+          "sortIndex": 1,
+          "text": "Melt the butter in a large pan over medium heat, add the garlic and red pepper flakes, and cook until fragrant, about 1 minute.",
+          "timerSeconds": 60
+        },
+        {
+          "sortIndex": 2,
+          "text": "Toss the pasta in the garlic butter with a little reserved pasta water until glossy."
+        },
+        {
+          "sortIndex": 3,
+          "text": "Off the heat, stir in the parmesan and parsley, season with salt and pepper, and serve."
+        }
       ]
     },
     {
       "id": "sample-sheet-pan-chicken",
       "title": "Sheet-Pan Lemon Herb Chicken",
-      "summary": "Crispy chicken and potatoes on one pan — minimal cleanup, maximum flavor.",
+      "summary": "Crispy chicken and potatoes on one pan \u2014 minimal cleanup, maximum flavor.",
       "heroImageURL": "https://jasonepage.github.io/mise/images/sheet-pan-chicken.jpg",
       "totalMinutes": 45,
       "baseServings": 4,
@@ -49,22 +117,84 @@
       "isFavorite": false,
       "extractionMethod": "manual",
       "extractionConfidence": 1,
-      "source": { "siteName": "Mise Kitchen" },
-      "tags": ["Sheet-pan", "Sample"],
+      "source": {
+        "siteName": "Mise Kitchen"
+      },
+      "tags": [
+        "Sheet-pan",
+        "Sample"
+      ],
       "ingredients": [
-        { "sortIndex": 0, "quantity": 4, "item": "chicken thighs", "rawText": "4 chicken thighs" },
-        { "sortIndex": 1, "quantity": 1, "unit": "lb", "item": "baby potatoes", "note": "halved", "rawText": "1 lb baby potatoes, halved" },
-        { "sortIndex": 2, "quantity": 2, "unit": "tbsp", "item": "olive oil", "rawText": "2 tablespoons olive oil" },
-        { "sortIndex": 3, "quantity": 1, "item": "lemon", "note": "sliced", "rawText": "1 lemon, sliced" },
-        { "sortIndex": 4, "quantity": 3, "unit": "clove", "item": "garlic", "note": "smashed", "rawText": "3 cloves garlic, smashed" },
-        { "sortIndex": 5, "quantity": 1, "unit": "tsp", "item": "dried oregano", "rawText": "1 teaspoon dried oregano" },
-        { "sortIndex": 6, "item": "Salt and pepper", "note": "to taste", "rawText": "Salt and pepper to taste" }
+        {
+          "sortIndex": 0,
+          "quantity": 4,
+          "item": "chicken thighs",
+          "rawText": "4 chicken thighs"
+        },
+        {
+          "sortIndex": 1,
+          "quantity": 1,
+          "unit": "lb",
+          "item": "baby potatoes",
+          "note": "halved",
+          "rawText": "1 lb baby potatoes, halved"
+        },
+        {
+          "sortIndex": 2,
+          "quantity": 2,
+          "unit": "tbsp",
+          "item": "olive oil",
+          "rawText": "2 tablespoons olive oil"
+        },
+        {
+          "sortIndex": 3,
+          "quantity": 1,
+          "item": "lemon",
+          "note": "sliced",
+          "rawText": "1 lemon, sliced"
+        },
+        {
+          "sortIndex": 4,
+          "quantity": 3,
+          "unit": "clove",
+          "item": "garlic",
+          "note": "smashed",
+          "rawText": "3 cloves garlic, smashed"
+        },
+        {
+          "sortIndex": 5,
+          "quantity": 1,
+          "unit": "tsp",
+          "item": "dried oregano",
+          "rawText": "1 teaspoon dried oregano"
+        },
+        {
+          "sortIndex": 6,
+          "item": "Salt and pepper",
+          "note": "to taste",
+          "rawText": "Salt and pepper to taste"
+        }
       ],
       "steps": [
-        { "sortIndex": 0, "text": "Heat the oven to 425°F." },
-        { "sortIndex": 1, "text": "Toss the potatoes with olive oil, salt, and pepper on a sheet pan and roast for 10 minutes.", "timerSeconds": 600 },
-        { "sortIndex": 2, "text": "Add the chicken, lemon slices, garlic, and oregano, and roast until the chicken is cooked through, about 25 minutes.", "timerSeconds": 1500 },
-        { "sortIndex": 3, "text": "Rest for 5 minutes before serving.", "timerSeconds": 300 }
+        {
+          "sortIndex": 0,
+          "text": "Heat the oven to 425\u00b0F."
+        },
+        {
+          "sortIndex": 1,
+          "text": "Toss the potatoes with olive oil, salt, and pepper on a sheet pan and roast for 10 minutes.",
+          "timerSeconds": 600
+        },
+        {
+          "sortIndex": 2,
+          "text": "Add the chicken, lemon slices, garlic, and oregano, and roast until the chicken is cooked through, about 25 minutes.",
+          "timerSeconds": 1500
+        },
+        {
+          "sortIndex": 3,
+          "text": "Rest for 5 minutes before serving.",
+          "timerSeconds": 300
+        }
       ]
     },
     {
@@ -79,20 +209,70 @@
       "isFavorite": false,
       "extractionMethod": "manual",
       "extractionConfidence": 1,
-      "source": { "siteName": "Mise Kitchen" },
-      "tags": ["Breakfast", "Sample"],
+      "source": {
+        "siteName": "Mise Kitchen"
+      },
+      "tags": [
+        "Breakfast",
+        "Sample"
+      ],
       "ingredients": [
-        { "sortIndex": 0, "quantity": 0.5, "unit": "cup", "item": "rolled oats", "rawText": "1/2 cup rolled oats" },
-        { "sortIndex": 1, "quantity": 0.5, "unit": "cup", "item": "milk", "rawText": "1/2 cup milk" },
-        { "sortIndex": 2, "quantity": 0.25, "unit": "cup", "item": "yogurt", "rawText": "1/4 cup yogurt" },
-        { "sortIndex": 3, "quantity": 1, "unit": "tbsp", "item": "chia seeds", "rawText": "1 tablespoon chia seeds" },
-        { "sortIndex": 4, "quantity": 1, "unit": "tsp", "item": "honey", "rawText": "1 teaspoon honey" },
-        { "sortIndex": 5, "quantity": 0.5, "unit": "cup", "item": "berries", "rawText": "1/2 cup berries" }
+        {
+          "sortIndex": 0,
+          "quantity": 0.5,
+          "unit": "cup",
+          "item": "rolled oats",
+          "rawText": "1/2 cup rolled oats"
+        },
+        {
+          "sortIndex": 1,
+          "quantity": 0.5,
+          "unit": "cup",
+          "item": "milk",
+          "rawText": "1/2 cup milk"
+        },
+        {
+          "sortIndex": 2,
+          "quantity": 0.25,
+          "unit": "cup",
+          "item": "yogurt",
+          "rawText": "1/4 cup yogurt"
+        },
+        {
+          "sortIndex": 3,
+          "quantity": 1,
+          "unit": "tbsp",
+          "item": "chia seeds",
+          "rawText": "1 tablespoon chia seeds"
+        },
+        {
+          "sortIndex": 4,
+          "quantity": 1,
+          "unit": "tsp",
+          "item": "honey",
+          "rawText": "1 teaspoon honey"
+        },
+        {
+          "sortIndex": 5,
+          "quantity": 0.5,
+          "unit": "cup",
+          "item": "berries",
+          "rawText": "1/2 cup berries"
+        }
       ],
       "steps": [
-        { "sortIndex": 0, "text": "Stir the oats, milk, yogurt, chia seeds, and honey together in a jar." },
-        { "sortIndex": 1, "text": "Cover and refrigerate overnight." },
-        { "sortIndex": 2, "text": "Top with berries before eating." }
+        {
+          "sortIndex": 0,
+          "text": "Stir the oats, milk, yogurt, chia seeds, and honey together in a jar."
+        },
+        {
+          "sortIndex": 1,
+          "text": "Cover and refrigerate overnight."
+        },
+        {
+          "sortIndex": 2,
+          "text": "Top with berries before eating."
+        }
       ]
     }
   ]
