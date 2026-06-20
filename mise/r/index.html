@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A recipe, shared with Mise</title>
+  <style>
+    :root { --paper:#faf4e8; --ink:#26211c; --saffron:#cb6614; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: grid; place-items: center;
+      background: linear-gradient(#faf4e8, #f0e2c8); color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif; padding: 24px;
+    }
+    .card { max-width: 460px; width: 100%; text-align: center; background: rgba(255,255,255,0.5); border-radius: 24px; padding: 40px 28px; }
+    .kicker { letter-spacing: .22em; font-size: 13px; font-weight: 700; color: var(--saffron); }
+    h1 { font-family: Georgia, serif; font-size: 32px; margin: 14px 0 6px; }
+    p { color: #6b6258; font-size: 16px; line-height: 1.5; }
+    .rule { width: 64px; height: 5px; border-radius: 3px; background: var(--saffron); margin: 16px auto 22px; }
+    .btn { display: block; text-decoration: none; font-weight: 600; font-size: 17px; padding: 15px 18px; border-radius: 14px; margin: 12px 0; }
+    .primary { background: var(--saffron); color: #fff; }
+    .secondary { background: rgba(203,102,20,0.12); color: var(--saffron); }
+    .source { display: inline-block; margin-top: 18px; color: #6b6258; font-size: 14px; }
+    .mark { margin-top: 28px; font-family: Georgia, serif; font-weight: 700; color: var(--saffron); font-size: 22px; }
+    .tagline { color: #8a8175; font-size: 13px; margin-top: 2px; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="kicker">MISE · CLEAN RECIPE</div>
+    <h1>A recipe was shared with you</h1>
+    <div class="rule"></div>
+    <p>Open it in Mise to get a clean, structured recipe — no ads, no life story.</p>
+    <a id="open" class="btn primary" href="#">Open in Mise</a>
+    <!-- Replace with your App Store link once published. -->
+    <a id="store" class="btn secondary" href="https://apps.apple.com/app/idXXXXXXXXX">Get Mise on the App Store</a>
+    <a id="source" class="source" href="#" rel="nofollow noopener">View the original recipe →</a>
+    <div class="mark">Mise</div>
+    <div class="tagline">every recipe, finally clean</div>
+  </main>
+  <script>
+    const source = new URLSearchParams(location.search).get("u");
+    const open = document.getElementById("open");
+    const src = document.getElementById("source");
+    if (source) {
+      open.href = "mise://recipe?u=" + encodeURIComponent(source) + "&v=1";
+      src.href = source;
+    } else { open.style.display = "none"; src.style.display = "none"; }
+  </script>
+</body>
+</html>
