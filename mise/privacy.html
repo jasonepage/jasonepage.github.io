@@ -17,23 +17,38 @@
   <h1>Mise — Privacy Policy</h1>
   <p class="muted">Last updated: June 2026</p>
 
-  <p>Mise is built so there is almost nothing to collect. Your recipes are extracted
+  <p>Mise is built to collect as little as possible. By default, your recipes are extracted
   and stored <strong>on your device</strong>, and synced only through <strong>your own
-  iCloud account</strong>. We do not run servers, and we never receive, store, or
-  process your recipes.</p>
+  iCloud account</strong>. There are no Mise accounts and no login.</p>
+
+  <h2>Optional cloud import (Mise Pro)</h2>
+  <p>Mise Pro adds an optional <strong>cloud import</strong> feature for links and media that
+  on-device extraction can't handle on its own — for example TikTok, Instagram, and YouTube.
+  Cloud import is <strong>off until you turn it on</strong>. When you use it, only the specific
+  link or media you choose to import is sent to Mise's backend and to Google's Gemini API to
+  extract the recipe. That content is processed only to return a recipe to you and is
+  <strong>not stored</strong>: the backend keeps no user data, and any uploaded media is deleted
+  after extraction. Imported recipes link back to their original source. If you never enable
+  cloud import, nothing about your recipes ever leaves your device except through your own iCloud.</p>
+
+  <h2>Purchases</h2>
+  <p>Mise Pro is an auto-renewing subscription handled entirely by Apple. Mise receives only an
+  Apple-signed receipt confirming that your subscription is active — we never see your payment
+  details, and there is no separate Mise account tied to your purchase.</p>
 
   <h2>What we don't do</h2>
   <ul>
     <li>No accounts. Your identity is your Apple ID / iCloud.</li>
-    <li>No Mise servers. There is no backend that could see your data.</li>
     <li>No ads, no trackers, no selling data — ever.</li>
     <li>No analytics that contain personal information or recipe content.</li>
+    <li>No server-side copy of your library. Cloud import processes one item at a time and keeps nothing.</li>
   </ul>
 
   <h2>Network activity</h2>
-  <p>The only network requests Mise makes are: fetching the recipe page or image you
-  explicitly choose to import, optional public metadata lookups, and Apple services
-  (iCloud sync and the App Store). Mise does not crawl the web or bypass paywalls.</p>
+  <p>Mise's network requests are: fetching the recipe page or image you explicitly choose to
+  import; optional public metadata lookups; Apple services (iCloud sync and the App Store); and,
+  <strong>only if you enable cloud import</strong>, sending the item you're importing to Mise
+  Cloud and Gemini as described above. Mise does not crawl the web or bypass paywalls.</p>
 
   <h2>Your data, your control</h2>
   <p>You can export your entire library to a portable JSON file at any time, and you
