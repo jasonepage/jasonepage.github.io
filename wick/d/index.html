@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wick Duel</title>
+  <style>
+    body { font-family: -apple-system, system-ui, sans-serif; max-width: 520px; margin: 0 auto; padding: 48px 22px; line-height: 1.55; color: #1c1c1e; text-align: center; }
+    h1 { font-size: 1.5rem; margin: 8px 0 4px; }
+    p { color: #4a4a4f; margin: 0 0 22px; }
+    .flame { font-size: 3rem; }
+    .code { font-family: ui-monospace, Menlo, monospace; font-weight: 800; font-size: 1.4rem; letter-spacing: 1px; color: #d8552f; background: #fff4ef; border: 1px solid #f0d9cf; border-radius: 12px; padding: 10px 16px; display: inline-block; margin-bottom: 26px; }
+    .btn { display: block; text-decoration: none; font-weight: 600; padding: 14px 20px; border-radius: 13px; margin: 10px auto; max-width: 320px; }
+    .primary { background: #d8552f; color: #fff; }
+    .primary:hover { background: #c2491f; }
+    .secondary { background: #f2f2f5; color: #1c1c1e; }
+    .muted { color: #8a8a90; font-size: 0.85rem; margin-top: 26px; }
+  </style>
+</head>
+<body>
+  <div class="flame">🔥</div>
+  <h1>You've been challenged to a Wick duel</h1>
+  <p>Guess the secret word by meaning — see if you can beat your friend.</p>
+
+  <div class="code" id="code">…</div>
+
+  <a class="btn primary" id="openBtn" href="#">Open in Wick</a>
+  <a class="btn secondary" href="https://apps.apple.com/app/id6777743483">Get Wick — free on the App Store</a>
+
+  <p class="muted">If you have Wick installed, this link opens the duel automatically. Otherwise, download Wick, then tap this link again — or open the app, go to Duel, and tap Paste.</p>
+
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var code = (params.get('c') || '').trim().toUpperCase();
+      if (code) {
+        document.getElementById('code').textContent = code;
+        // Try to hand off to the app via its custom scheme as a best-effort deep link.
+        document.getElementById('openBtn').setAttribute('href', 'wick://duel/' + encodeURIComponent(code));
+      } else {
+        document.getElementById('code').style.display = 'none';
+      }
+    })();
+  </script>
+</body>
+</html>
