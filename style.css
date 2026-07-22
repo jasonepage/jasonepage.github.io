@@ -87,19 +87,6 @@ body {
   color: var(--bgColor);
 }
 
-.link-title {
-  display: block;
-  font-weight: bold;
-}
-
-.link-sub {
-  display: block;
-  margin-top: 4px;
-  font-size: 0.8rem;
-  line-height: 1.3;
-  opacity: 0.75;
-}
-
 .section-label {
   color: var(--accentColor);
   font-size: 0.85rem;
