@@ -1,0 +1,38 @@
+# render.yaml — Render Blueprint for the Nanitch marketing site (static hosting).
+#
+# Publishes the ./nanitch folder (index.html landing page + privacy/terms/
+# guidelines/support) to nanitch.com. No build step — it's plain HTML.
+#
+# Setup:
+#   1. Place this file at the ROOT of the repo Render will deploy from
+#      (i.e. ~/Documents/GitHub/jasonepage.github.io/render.yaml), then
+#      git commit + push.
+#   2. Render dashboard → New → Blueprint → pick that repo. Render reads this file.
+#   3. After it deploys, add the DNS records Render shows for nanitch.com in Porkbun
+#      (and turn OFF Porkbun URL forwarding/parking first).
+#
+# If you'd rather deploy a DEDICATED repo that contains ONLY the site files,
+# move those files to that repo's root and change staticPublishPath to `./`.
+
+services:
+  - type: web
+    name: nanitch-site
+    runtime: static
+    # No build tooling — the site is static HTML. Render requires the field, so this
+    # is a harmless no-op.
+    buildCommand: "echo 'no build step — static HTML'"
+    staticPublishPath: ./nanitch
+    pullRequestPreviewsEnabled: true
+    domains:
+      - nanitch.com
+      - www.nanitch.com
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
