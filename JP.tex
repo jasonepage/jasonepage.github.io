@@ -1,0 +1,161 @@
+% Document class
+\documentclass[letterpaper,11pt]{article}
+
+% Packages
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+% Page style
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\footskip}{12pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margin adjustments
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\titlerule \vspace{-6pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \if\relax\detokenize{#1}\relax
+      #2 \vspace{-2.5pt}
+    \else
+      \textbf{#1}{: } #2 \vspace{-2.5pt}
+    \fi
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+% Project heading: title on its own line, tech stack on a second italic line.
+% Avoids the tabular* truncation that bit the previous version when titles ran long.
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-1pt}\item
+    \textbf{#1}\\
+    {\small\textit{#2}}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-5pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%---------- HEADER ----------
+\begin{center}
+  {\large \textbf{Jason Page}}\\[3pt]
+  {\small Available now for part-time / contract \;•\; Full-time June 2027}\\[3pt]
+  \href{mailto:jasonepage@gmail.com}{jasonepage@gmail.com}
+  \;•\;
+  971-284-6474
+  \;•\;
+  \href{https://jasonepage.github.io}{jasonepage.github.io}
+  \;•\;
+  \href{https://github.com/jasonepage}{github.com/jasonepage}
+  \;•\;
+  \href{https://linkedin.com/in/jasonepage}{linkedin.com/in/jasonepage}
+\end{center}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Oregon}{Eugene, OR}
+      {Bachelor of Science in Computer Science}{June 2027}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+% -------- Wick
+\resumeProjectHeading
+  {Wick: Guess by Meaning --- Semantic Word Game with On-Device AI \href{https://apps.apple.com/app/id6777743483}{\small(App Store)} \href{https://guesswick.com}{\small(Web)}}{Swift, SwiftUI, Apple Intelligence, Core ML, iOS, TypeScript, Gemini, Docker, Render}
+  \resumeItemListStart
+    \resumeItem{}{Designed and built a daily ``hot and cold'' word game: players guess a secret word by meaning, not spelling, and each guess is scored by semantic similarity with Hot/Warm/Cool feedback as guesses close in.}
+    \resumeItem{}{On iOS, integrated Apple Intelligence's on-device language model as ``Ask the Keeper'' --- a yes/no helper that answers questions like ``Is it alive?'' without revealing the word, plus AI meaning hints --- processed entirely on-device with no server round-trip, alongside streaks, shareable results, and a coin economy.}
+    \resumeItem{}{Built the web version (guesswick.com) with real-time head-to-head multiplayer --- Race (first to solve a shared word) and Dare (pick a word and watch a friend guess it live) --- powered by a Google Gemini backend for word generation and semantic scoring.}
+  \resumeItemListEnd
+
+% -------- Mise
+\resumeProjectHeading
+  {MakMak: Save Any Recipe --- iOS Cookbook with On-Device Recipe Extraction \href{https://apps.apple.com/app/makmak-save-any-recipe/id6782430587}{\small(App Store)}}{Swift, SwiftUI, iCloud, iOS, iPadOS, Docker, Render}
+  \resumeItemListStart
+    \resumeItem{}{Built a cookbook for iPhone and iPad that turns any recipe link, cookbook photo, or imported file into a clean, structured recipe --- extraction runs entirely on-device, so saved recipes work offline with no account and no ads.}
+    \resumeItem{}{Shipped the full cooking workflow in SwiftUI: Cook Mode with glanceable text and per-step timers, serving scaling with US/metric conversion, and meal planning that compiles the week into an aisle-sorted grocery list --- recipes live on-device and sync through the user's own iCloud, with an optional Pro cloud-import service running in Docker on Render.}
+  \resumeItemListEnd
+
+% -------- Pawl
+\resumeProjectHeading
+  {Pawl --- Commitment Lock for Quitting Gambling \href{https://apps.apple.com/us/app/pawl-commitment-lock/id6783119309}{\small(App Store)}}{Swift, SwiftUI, Screen Time, hardware security keys, Supabase}
+  \resumeItemListStart
+    \resumeItem{}{Built an iPhone commitment device that blocks sportsbook, casino, and betting apps and websites through Apple's Screen Time API, showing a ``Locked by Pawl'' shield with no unlock button.}
+    \resumeItem{}{Gated unblocking behind a physical FIDO2/USB-C security key the user keeps out of reach, plus a 15-minute cooling-off timer that auto-relocks --- turning an impulsive relapse into a deliberate choice.}
+    \resumeItem{}{Added recovery features: a clean-day streak that survives deleting and reinstalling the app, an urge button, a relapse log, and an optional Supabase-backed sponsor who approves unlock requests and is alerted if protection drops.}
+  \resumeItemListEnd
+
+% -------- Progressive Gin
+\resumeProjectHeading
+  {Progressive Gin --- Offline Progressive Rummy Card Game \href{https://apps.apple.com/us/app/progressive-gin/id6779775743}{\small(App Store)}}{Swift, SwiftUI, iOS}
+  \resumeItemListStart
+    \resumeItem{}{Built a fully offline Progressive Rummy game --- seven escalating rounds against a cast of AI opponents with buy-the-pile and meld mechanics --- with no ads, in-app purchases, or tracking.}
+    \resumeItem{}{Designing a full online multiplayer mode as the next milestone, extending the engine to real-time head-to-head play.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+  {UO Tutoring and Academic Engagement Center}{Eugene, OR}
+  {Math \& Computer Science Tutor}{Sept 2024 -- Present}
+  \resumeItemListStart
+    \resumeItem{}{Diagnose logic, syntax, and runtime errors across Python, C, and C++ using systematic debugging strategies (binary search, invariant checking, stack inspection).}
+    \resumeItem{}{Explain recursion, memory models, pointer semantics, and core data structures with examples calibrated to each student's background.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Mobile \& AI}{Swift, SwiftUI, iOS, iPadOS, Core ML, Apple Intelligence, iCloud, Claude API, prompt engineering}
+    \resumeSubItem{Languages}{Swift, TypeScript, Python, C, C++, JavaScript, SQL, Bash}
+    \resumeSubItem{Web \& Backend}{Next.js, Node.js, React, FastAPI, REST APIs, Flask, Django, Tailwind}
+    \resumeSubItem{Data}{PostgreSQL, MySQL}
+    \resumeSubItem{Infrastructure}{Docker, Render, Supabase, Xcode, Linux, Git/GitHub}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
