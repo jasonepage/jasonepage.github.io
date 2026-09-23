@@ -693,3 +693,117 @@ body {
     494px 1957px #fff, 1296px 431px #fff, 175px 1507px #fff, 831px 121px #fff,
     498px 1947px #fff, 617px 880px #fff, 240px 403px #fff;
 }
+
+/*-------------------------app cards-----------------------*/
+.apps {
+  max-width: 675px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.app-card {
+  color: var(--accentColor);
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.app-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.app-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 11px;
+  flex: none;
+}
+
+.app-icon-fallback {
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.app-name {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.app-desc {
+  margin: 10px 0 14px;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  opacity: 0.85;
+}
+
+.shots {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 20px) / 3);
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.shots::-webkit-scrollbar {
+  display: none;
+}
+
+.shots img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 600 / 1304;
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.06);
+  scroll-snap-align: start;
+}
+
+@media (max-width: 480px) {
+  .shots {
+    grid-auto-columns: 42%;
+  }
+}
+
+.app-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.pill {
+  color: var(--accentColor);
+  border: 1.5px solid var(--accentColor);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (hover: hover) {
+  .pill:hover {
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+  }
+}
+
+.pill:active {
+  background-color: var(--accentColor);
+  color: var(--bgColor);
+}
+
+#footer a {
+  color: var(--accentColor);
+}
