@@ -721,6 +721,20 @@ body {
   margin-bottom: 16px;
 }
 
+.app-banner-link {
+  display: block;
+  margin: -16px -16px 14px;
+}
+
+.app-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1280 / 549;
+  border-radius: 15px 15px 0 0;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
 .app-head {
   display: flex;
   align-items: center;
